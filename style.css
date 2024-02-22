@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#piano {
+    width: 68vw;
+    height: 390px;
+    border: 1px solid #000;
+    margin: 80px auto;
+    background-color: #00471b;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 200px;
+    margin: 20px 0 0 20px;
+}
+
+.keys {
+    height: 260px;
+    width: 95%;
+    border: 1px solid #000;
+    margin: 50px auto 40px;
+    background-color: #040404;
+    display: flex;
+    gap: 5px;
+    padding: 1px 3px 3px;
+}
+
+.key {
+    height: 100%;
+    width: 54px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+}
+
+.black-key::after {
+    height: 120px;
+    width: 38px;
+    background-color: #1d1e22;
+    content: "";
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    left: -22px;
+}
+
+@media (max-width: 991px) {
+    .custom-style {
+        display: none;
+    }
+
+    #piano {
+        width: 476px;
+    }
+
+    .key {
+        width: 59px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .custom-style-2 {
+        display: none;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1422px) {
+    #piano {
+        width: 78vw;
+    }
+}
